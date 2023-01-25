@@ -16,6 +16,10 @@ int main() {
     std::cout << "not defined, stop clearing the buffer for every line !" << std::endl;
 #endif
 
+#if 0 // will not be compiled
+    std::cout << "Medicine" << std::endl;
+#endif
+
     std::cout << "Hello, World!" << std::endl;
 
     return 0;
