@@ -12,7 +12,13 @@ void printDouble(int x) {
     std::cout << x << " doubled is: " << x * 2 << '\n';
 }
 
+int doubleParameter(int x) {
+    return x * 2;
+}
+
 int main() {
-    printDouble(getValueFromUser());
+    int x{getValueFromUser()};
+    printDouble(x);
+    std::cout << x << " x2 is: " << doubleParameter(x) << std::endl;
     return EXIT_SUCCESS;
 }
