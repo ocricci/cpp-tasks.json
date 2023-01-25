@@ -1,0 +1,4 @@
+-- add to args, the flags that are needed to compile the given file
+
+"-O2",
+"-DNDEBUG",
