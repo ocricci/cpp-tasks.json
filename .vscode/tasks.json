@@ -6,7 +6,7 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-fdiagnostics-color=always",
-                "-I/source/includes",
+                "-I${fileDirname}/includes/include/",
                 "-g",
                 "-ggdb",
                 "-pedantic-errors",
