@@ -130,6 +130,13 @@ void constzReceiveConst(const int x) {
     std::cout << "The const int you passed is: " << x << '\n';
 }
 
+int getNumber() {
+    int number{};
+    std::cout << "Enter a number: ";
+    std::cin >> number;
+    return number;
+}
+
 void constz() {
     const double gravity{9.8};
     std::cout << "Earth gravity is:" << gravity << std::endl;
@@ -141,6 +148,11 @@ void constz() {
     std::cout << "The const int returned is: " << constReturned << '\n';
     std::cout << (constReturned = 30) << " value changed " << '\n';
     constzReceiveConst(constReturned);
+
+    const int compileConst{3 + 4};
+    std::cout << "The compile const is: " << compileConst << '\n';
+    const int runtimeConst{4 + getNumber()};
+    std::cout << "The runtime const is: " << runtimeConst << '\n';
 }
 
 int main() {
