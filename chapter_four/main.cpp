@@ -73,10 +73,24 @@ void boolz() {
     std::cout << std::boolalpha;
     std::cout << (k = 4) << " is the bool" << '\n';
     std::cout << (k = 0) << " is the bool" << '\n';
-    std::cout << "Enter a boolean value: \n";
-    std::cin >> std::boolalpha;
-    std::cin >> k;
-    std::cout << k << " is the value you entered, the bool" << '\n';
+    //std::cout << "Enter a boolean value: \n";
+    //std::cin >> std::boolalpha;
+    //std::cin >> k;
+    //std::cout << k << " is the value you entered, the bool" << '\n';
+}
+
+void ifz() {
+    std::cout << "Enter a number my friend'o: \n";
+    int x;
+    std::cin >> x;
+    std::cout << "You entered: " << x << '\n';
+    if (x > 10) {
+        std::cout << "You entered a number bigger than 10" << '\n';
+    } else if (x < 10) {
+        std::cout << "You entered a number smaller than 10" << '\n';
+    } else {
+        std::cout << "You entered a number equal to 10" << '\n';
+    }
 }
 
 int main() {
@@ -85,5 +99,6 @@ int main() {
     intz();
     floatz();
     boolz();
+    ifz();
     return 0;
 }
