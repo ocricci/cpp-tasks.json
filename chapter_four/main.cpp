@@ -122,6 +122,27 @@ void prog_x() {
     std::cout << "The int value of the char you entered is: " << static_cast<int>(ch) << '\n';
 }
 
+/* const */ int constzReturnConst() {
+    return 10;
+}
+
+void constzReceiveConst(const int x) {
+    std::cout << "The const int you passed is: " << x << '\n';
+}
+
+void constz() {
+    const double gravity{9.8};
+    std::cout << "Earth gravity is:" << gravity << std::endl;
+    int age = 33;
+    const int ageC = age;
+    age = age + 1;
+    std::cout << "Age is: " << ageC << " next year it will be " << age << std::endl;
+    int constReturned{constzReturnConst()};
+    std::cout << "The const int returned is: " << constReturned << '\n';
+    std::cout << (constReturned = 30) << " value changed " << '\n';
+    constzReceiveConst(constReturned);
+}
+
 int main() {
     voidz();
     sizeofz();
@@ -132,5 +153,8 @@ int main() {
     charz();
     conversion();
     prog_x();
+    constz();
+    
+    
     return 0;
 }
