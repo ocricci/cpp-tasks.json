@@ -11,10 +11,13 @@ void sizeofz() {
     std::cout << "float: " << sizeof(float) << "\n";
     std::cout << "bool: " << sizeof(bool) << "\n";
     std::cout << "long long: " << sizeof(long long) << "\n";
+    std::cout << sizeof("This cool string'o") << "\n";
+    std::cout << (8 / 5) << " is the int division of 8 / 5" << std::endl;
 }
 
 int main() {
     voidz();
     sizeofz();
+    return 0;
 }
 
