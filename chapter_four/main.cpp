@@ -1,4 +1,6 @@
 #include <iostream>
+#include <iomanip>
+#include <cstdint>
 
 void voidz() {
     std::cout << "Voidz" << std::endl;
@@ -44,12 +46,44 @@ void intz() {
     minus--;
     minus--;
     std::cout << minus << " is the unsigned int minus" << '\n';
+    std::cout << std::int16_t{1} << " is the int16_t" << '\n';
+    std::cout << sizeof(std::int_fast8_t) << " fast !" << '\n';
+    std::cout << sizeof(std::int_fast32_t) * 8 << " fast !" << '\n';
+    std::cout << "The size of std::size_t is: " << sizeof(std::size_t) << '\n';
+}
 
+void floatz() {
+    float koma{10.0};
+    double komad{10.0};
+    long double komald{10.0};
+    std::cout << koma << " is the float" << '\n';
+    std::cout << komad << " is the double" << '\n';
+    std::cout << komald << " is the long double" << '\n';
+
+    std::cout << std::setprecision(17);
+    double c{1.0};
+    std::cout << c << " is the double" << '\n';
+    double d{0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1};
+    std::cout << d << " is the double" << '\n';
+
+}
+
+void boolz() {
+    bool k;
+    std::cout << std::boolalpha;
+    std::cout << (k = 4) << " is the bool" << '\n';
+    std::cout << (k = 0) << " is the bool" << '\n';
+    std::cout << "Enter a boolean value: \n";
+    std::cin >> std::boolalpha;
+    std::cin >> k;
+    std::cout << k << " is the value you entered, the bool" << '\n';
 }
 
 int main() {
     voidz();
     sizeofz();
     intz();
+    floatz();
+    boolz();
     return 0;
 }
