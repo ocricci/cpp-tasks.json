@@ -149,7 +149,7 @@ void constz() {
     std::cout << (constReturned = 30) << " value changed " << '\n';
     constzReceiveConst(constReturned);
 
-    const int compileConst{3 + 4};
+    constexpr int compileConst{3 + 4};
     std::cout << "The compile const is: " << compileConst << '\n';
     const int runtimeConst{4 + getNumber()};
     std::cout << "The runtime const is: " << runtimeConst << '\n';
