@@ -81,8 +81,9 @@ void boolz() {
 
 void ifz() {
     std::cout << "Enter a number my friend'o: \n";
-    int x;
-    std::cin >> x;
+    int x{10};
+    //std::cin >> x;
+    //
     std::cout << "You entered: " << x << '\n';
     if (x > 10) {
         std::cout << "You entered a number bigger than 10" << '\n';
@@ -93,6 +94,34 @@ void ifz() {
     }
 }
 
+void charz() {
+    std::cout << char{'a'} << " is the char" << '\n';
+    std::cout << char{65} << " is the char" << '\n';
+}
+
+double iRequireDouble(double x) {
+    return x * 2;
+}
+
+int iRequireInt(int x) {
+    return x * 2;
+}
+
+void conversion() {
+    std::cout << iRequireDouble(5) << '\n';
+    std::cout << iRequireInt(static_cast<int>(5.5)) << '\n';
+    char ch{97};
+    std::cout << static_cast<int>(ch) << " - " << ch << '\n';
+}
+
+void prog_x() {
+    std::cout << "Enter a char: \n";
+    char ch{};
+    std::cin >> ch;
+    std::cout << "The char you entered is: " << ch << '\n';
+    std::cout << "The int value of the char you entered is: " << static_cast<int>(ch) << '\n';
+}
+
 int main() {
     voidz();
     sizeofz();
@@ -100,5 +129,8 @@ int main() {
     floatz();
     boolz();
     ifz();
+    charz();
+    conversion();
+    prog_x();
     return 0;
 }
