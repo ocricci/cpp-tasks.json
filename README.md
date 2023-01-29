@@ -12,9 +12,6 @@ The repository contains various experiments and exercises on topics such as:
 - Functions
 - Classes and Objects
 
-## Contributing
-If you have any suggestions or improvements, feel free to create a pull request or open an issue in the repository.
-
 ## Disclaimer
 This repository is solely for educational purposes and should not be used for commercial purposes. The content of this repository is not endorsed by learncpp.com.
 
