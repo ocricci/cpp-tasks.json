@@ -42,11 +42,20 @@ int main() {
     std::cout << x++ << ' ' << y-- << '\n'; // postfix
     std::cout << x << ' ' << y << '\n';
     
-    int booba{0};
-    std::cout << booba << ' ' << x << '\n';
-    booba = x++;
-    std::cout << booba << ' ' << x << '\n'; 
+    int b{0};
+    std::cout << b << ' ' << x << '\n';
+    b = x++;
+    std::cout << b << ' ' << x << '\n'; 
 
+    int c{1};
+    int d{2};
+    std::cout << (c++, d++) << '\n';
+    int z{0};
+    //z = (c,d);
+    std::cout << z << '\n';
+    //z = c,d;
+    std::cout << z << '\n';
+    z == 0 ? c = 1 : d = 2;
     // 6 + 5 * 4 % 3
     std::cout << 6 + ((5 * 4) % 3) << std::endl;
     return 0;
