@@ -16,5 +16,5 @@ The repository contains various experiments and exercises on topics such as:
 This repository is solely for educational purposes and should not be used for commercial purposes. The content of this repository is not endorsed by learncpp.com.
 
 https://www.learncpp.com/
-https://www.learncpp.com/cpp-tutorial/increment-decrement-operators-and-side-effects/
+https://www.learncpp.com/cpp-tutorial/relational-operators-and-floating-point-comparisons/
 https://code.visualstudio.com/docs/cpp/config-linux
