@@ -153,6 +153,15 @@ void constz() {
     std::cout << "The compile const is: " << compileConst << '\n';
     const int runtimeConst{4 + getNumber()};
     std::cout << "The runtime const is: " << runtimeConst << '\n';
+    
+    std::cout << 5L << " is the long" << '\n';
+    float f{2.0f}; // defaults to double, so.. f'em
+    double d{2.0};
+    std::cout << f << " is the float" << '\n';
+    std::cout << d << " is the double" << '\n';
+    double avogadro{6.02e23};
+    avogadro -= 1.0;
+    std::cout << avogadro << " is the double" << '\n';
 }
 
 int main() {
