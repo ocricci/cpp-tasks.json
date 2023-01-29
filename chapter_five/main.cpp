@@ -34,6 +34,19 @@ int main() {
         std::cout << "The number " << number << " is odd" << '\n';
     }
 
+    int x{ 5 };
+    int y{ 5 };
+    std::cout << x << ' ' << y << '\n';
+    std::cout << ++x << ' ' << --y << '\n'; // prefix
+    std::cout << x << ' ' << y << '\n';
+    std::cout << x++ << ' ' << y-- << '\n'; // postfix
+    std::cout << x << ' ' << y << '\n';
+    
+    int booba{0};
+    std::cout << booba << ' ' << x << '\n';
+    booba = x++;
+    std::cout << booba << ' ' << x << '\n'; 
+
     // 6 + 5 * 4 % 3
     std::cout << 6 + ((5 * 4) % 3) << std::endl;
     return 0;
