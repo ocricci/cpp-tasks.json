@@ -15,8 +15,7 @@
                 "-Wsign-conversion",
                 "-Werror",
                 "-std=c++1z",
-                "${fileDirname}/main.cpp",
-                "${fileDirname}/add.cpp",
+                "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
