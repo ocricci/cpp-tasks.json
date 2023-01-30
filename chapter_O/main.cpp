@@ -117,7 +117,7 @@ void quiz() {
 
     // clear favorite flag
     //myArcticleFlags &= ~option_favorited;
-
+    // https://www.learncpp.com/cpp-tutorial/converting-between-binary-and-decimal/
     std::cout << std::bitset<8>{ myArticleFlags } << '\n';
 }
 
