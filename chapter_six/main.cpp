@@ -50,5 +50,9 @@ int main()
     }
     std::cout << "shadow [outside block]: " << shadow << '\n';
     std::cout << "g_shadow [outside block]: " << g_shadow << '\n';
+
+    std::cout << "add::g_x_add " << add::g_x_add << '\n';
+    std::cout << "add::g_y_add " << add::g_y_add << '\n';
+    std::cout << "add::g_z_add " << add::g_z_add << '\n';
     return 0;
 }
