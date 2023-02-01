@@ -13,6 +13,10 @@ void printDigitName(int digit) {
         case 3:
             std::cout << "Three" << std::endl;
         return;
+
+        default:
+            std::cout << "Unknown" << std::endl;
+        return;
     }
 }
 
