@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <iostream>
 
 int sumTo(int target)
@@ -33,5 +34,5 @@ int main()
 
     std::cout << " here we go, for " << std::endl;
     std::cout << " calling sumTo for 10: " << sumTo(10);
-    return 0;
+    std::exit(0);
 }
