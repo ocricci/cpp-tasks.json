@@ -49,6 +49,37 @@ int main() {
     char xk{'a'};
     ++xk;
     std::cout << xk << "\n";
-    
+
+    // inversion
+    int qt{5};
+    while (qt > 0) {
+        int qi{qt};
+        while (qi > 0) {
+            std::cout << qi << ' ';
+            --qi;
+        }
+
+        std::cout << "\n";
+        --qt;
+    }
+
+
+    // space print
+    int so{1};
+    while (so <= 5) {
+        int si{5};
+        while (si > 0) {
+            if (si <= so) {
+                std::cout << si << ' ';
+            } else {
+                std::cout << ' ' << ' ';
+            }
+
+            --si;
+        }
+        std::cout << "\n";
+        ++so;
+    }
+
     return 0;
 }
