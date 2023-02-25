@@ -10,6 +10,19 @@ int sumTo(int target)
     return sum;
 }
 
+void koma()
+{
+    int x{ 5 };
+    int y{ 7 };
+    std::cout << "\n";
+    if (!(x > y)) // oops: operator precedence issue
+        std::cout << x << " is not greater than " << y << '\n';
+    else
+        std::cout << x << " is greater than " << y << '\n';
+
+    std::cerr << "Erro !";
+}
+
 int main()
 {
     // for (init-statement; condition; end-expression)
@@ -34,5 +47,6 @@ int main()
 
     std::cout << " here we go, for " << std::endl;
     std::cout << " calling sumTo for 10: " << sumTo(10);
+    koma();
     std::exit(0);
 }
